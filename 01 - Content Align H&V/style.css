@@ -1,0 +1,51 @@
+/* Initial CSS */
+
+.wrapper {
+  margin: 0 auto;
+  width: clamp(calc(320pc - 3rem), 75%, 70ch);
+  height: calc(75vh - 2.5rem);
+  border: .5rem solid black;
+}
+
+.child {
+  padding: 0 2rem;
+  width: 50%;
+  border: .5rem solid red;
+}
+
+/* Flex based fix */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid based fix 01 */
+/* .wrapper {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+} */
+
+/* Grid based fix 03 */
+/* .wrapper {
+  display: grid;
+}
+
+.child {
+  justify-self: center;
+  align-self: center;
+} */
+
+
+/* Grid based fix 03 */
+/* .wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.child {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+} */

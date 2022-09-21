@@ -1,0 +1,33 @@
+.wrapper {
+  margin: 0 auto;
+  width: clamp(calc(320px - 3rem), 75%, 70ch);
+  height: calc(75vh - 2.5rem);
+  border: .5rem solid black;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: #FFF;
+}
+
+/* Fix */
+
+.menu ul {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

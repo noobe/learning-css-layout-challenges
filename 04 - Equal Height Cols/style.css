@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 1rem;
+  width: clamp(calc(320px - 3rem), 75%, 70ch);
+  border: 0.5rem solid black;
+}
+
+.block {
+  padding: 0 1rem;
+  border: 0.5rem solid green;
+}
+
+/* Fix */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.block {
+  flex: 1 0 10ch;
+}

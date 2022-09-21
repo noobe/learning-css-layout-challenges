@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.cover {
+  padding: 2rem;
+}
+
+/* Fix */
+
+.wrapper {
+  display: flex;
+}
+
+.image, .cover {
+  flex: 1 0;
+}
+.image img {
+  height: 100vh;
+  object-fit: cover;
+}
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
